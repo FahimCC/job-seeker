@@ -3,17 +3,23 @@ export default {
 	content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
 	theme: {
 		extend: {
-			colors: {},
-			fontFamily: {},
+			colors: {
+				primary: '#7E90FE',
+				secondary: '#9873FF',
+				gray: '#757575',
+			},
+			fontFamily: {
+				manrope: ['Manrope', 'sans-serif'],
+			},
 		},
 		container: {
 			center: true,
 			padding: {
 				DEFAULT: '1rem',
-				md: '3rem',
-				lg: '4rem',
-				xl: '4rem',
-				'2xl': '4rem',
+				md: '2rem',
+				lg: '3rem',
+				xl: '6rem',
+				'2xl': '8rem',
 			},
 		},
 	},
