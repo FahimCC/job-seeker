@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -10,15 +10,25 @@
 .hv:hover {
 	@apply scale-75;
 }
+
 .btn-primary {
 	@apply py-5 px-7 rounded-lg bg-gradient-to-r from-primary to-secondary text-white font-extrabold;
 }
 .btn-primary:hover {
 	@apply py-5 px-7 rounded-lg bg-gradient-to-r from-secondary to-primary text-white font-extrabold;
 }
+
 .btn-secondary {
 	@apply py-3 px-5 rounded-md bg-gradient-to-r from-primary to-secondary text-white font-extrabold;
 }
+.btn-secondary:hover {
+	@apply py-3 px-5 rounded-md bg-gradient-to-r from-secondary to-primary text-white font-extrabold;
+}
+
+.btn-outline {
+	@apply active border-2 border-primary rounded-md py-2 px-4 font-extrabold;
+}
+
 .my-container {
 	@apply container md:container lg:container;
 }

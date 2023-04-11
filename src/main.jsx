@@ -5,9 +5,10 @@ import App from './App';
 import AppliedJobs from './components/AppliedJobs';
 import Blog from './components/Blog';
 import Home from './components/Home';
+import JobDetails from './components/JobDetails';
 import Statistics from './components/Statistics';
 import './index.css';
-import { getDataFromJson } from './utils/getDataFromJson';
+import { getDataFromJson, getSingleDataFromJson } from './utils/DataFromJson';
 
 const router = createBrowserRouter([
 	{
@@ -18,6 +19,11 @@ const router = createBrowserRouter([
 				path: '/',
 				element: <Home />,
 				loader: getDataFromJson,
+			},
+			{
+				path: '/jobDetails/:id',
+				element: <JobDetails />,
+				loader: ({ params }) => getSingleDataFromJson(params.id),
 			},
 			{
 				path: '/appliedJobs',

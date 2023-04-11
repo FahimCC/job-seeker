@@ -1,0 +1,110 @@
+[
+	{
+		"id": 1,
+		"logo_url": "https://i.ibb.co/86h0Zr8/google.png",
+		"job_title": "Threat Analyst, Google Cloud",
+		"company_name": "Google LLC",
+		"site": "Remote",
+		"time": "Full Time",
+		"location": "United States",
+		"salary": "100k - 150k",
+		"description": "In this role, you will work with a set of intelligence priorities to handle a variety of complex assignments and situations and demonstrate full knowledge of fundamental concepts across a wide range of intelligence disciplines. You will exercise acumen in selecting and applying appropriate work methods, procedures, techniques and practices.",
+		"responsibility": "Conduct and lead comprehensive research into the Tactics, Techniques and Procedures (TTPs) and motivation of state sponsored espionage campaigns and actors. Prioritize research according to customer priorities and requests. Produce and review written reporting on state sponsored espionage.",
+		"educational_requirements": "No need.",
+		"experiences": "2 years of experience leading investigations and generating novel leads on espionage activity.",
+		"contact_information": {
+			"phone": "8701755000",
+			"email": "info@gmail.com"
+		}
+	},
+	{
+		"id": 2,
+		"logo_url": "https://i.ibb.co/mXGgN17/brainstation23.png",
+		"job_title": "Senior Asp.Net Developer",
+		"company_name": "Brain Station 23",
+		"site": "Onsite",
+		"time": "Full Time",
+		"location": "Bir Uttam Ak Khandaker Rd, Mohakhali(Amtoli) C/A, Dhaka, Bangladesh",
+		"salary": "80k - 100k",
+		"description": "We are looking for .NET developer responsible for the development, maintenance, and deployment of applications. Your primary focus will be developing high-end applications based on .NET and .NET Core by following proper architecture patterns and best practices. Therefore, a commitment to collaborative problem solving, sophisticated design, and creating quality products is essential.",
+		"responsibility": "Collaborate with cross-functional teams to analyze, design, and development. Ability to adapt to the fast pace development model is crucial. Working experience in Agile Methodology. Hands-on experience in leading projects or being a significant contributor to software development and delivery.",
+		"educational_requirements": "B.Sc./M.Sc in Computer Science or Software Engineering from any reputed university/Equivalent combination of education and experience may be considered.",
+		"experiences": "Must have a minimum of 4 years of solid experience in .Net. Must have a good working experience with ASP.NET Core, ASP.NET MVC, ASP.NET Web Forms, Web API, RDLC or Crystal Report.",
+		"contact_information": {
+			"phone": "01783-090909",
+			"email": "info@brainstation23.com"
+		}
+	},
+	{
+		"id": 3,
+		"logo_url": "https://i.ibb.co/9g9FD2p/tesla.png",
+		"job_title": "Software Engineer - Wireless Systems",
+		"company_name": "Tesla",
+		"site": "Onsite",
+		"time": "Full Time",
+		"location": "PALO ALTO, California",
+		"salary": "140k - 160k",
+		"description": "Tesla is seeking a highly motivated Embedded Software Engineer for the Wireless Systems team to help develop best in class telematics solutions. The role involves embedded software design, development and validation of wireless telematics systems across cellular (LTE and 5G), WiFi and Bluetooth technologies for Tesla vehicle platforms (S, 3, X, Y, ...). The position requires working closely with cross-functional teams as well as external suppliers. ",
+		"responsibility": "Contribute to Tesla’s wireless connectivity stack – Cellular, WiFi, Bluetooth/BLE. Develop telemetry and analytics platform enabling data collection, analysis and visualization of data reported from Tesla fleet. Contribute to test automation frameworks to validate existing and new connectivity features. Provide support to QA, manufacturing, and other software teams.",
+		"educational_requirements": "No need.",
+		"experiences": "Experience in Computer Engineering, Computer Science, Physics, Electrical Engineering or proof of exceptional skills in related fields with practical software engineering experience. Skilled at C/C++, Python, Shell scripts.",
+		"contact_information": {
+			"phone": "540020430",
+			"email": "info@tesla.com"
+		}
+	},
+	{
+		"id": 4,
+		"logo_url": "https://i.ibb.co/86h0Zr8/google.png",
+		"job_title": "Engineering Manager, Google Pixel",
+		"company_name": "Google LLC",
+		"site": "Remote",
+		"time": "Full Time",
+		"location": "United States",
+		"salary": "150k -200k",
+		"description": "As an Engineering Manager, you will own the strategy, scoping, navigation, and outcome for very difficult and complex technical problems. You also have the opportunity to lead a team of talented cellular protocol stack engineers who are focusing on development, integration, and customization of modem features on Android devices, and working closely with extended workforce partners. Your team will focus on the core Non-access Stratum (NAS) layer and protocol stack services.",
+		"responsibility": "Lead or guide teams to clarify large, open-ended technical problems, resolving ambiguity, making them tractable, and easier to solve. Develop modem software across all protocol stack layers. Develop thermal, power, and performance optimized connectivity solutions. Develop innovative modem differentiators to improve the overall connectivity experience.",
+		"educational_requirements": "Bachelor's degree or equivalent practical experience.",
+		"experiences": "8 years of experience in software or firmware development. 5 years of experience in cellular modem development.",
+		"contact_information": {
+			"phone": "8701755000",
+			"email": "info@gmail.com"
+		}
+	},
+	{
+		"id": 5,
+		"logo_url": "https://i.ibb.co/mXGgN17/brainstation23.png",
+		"job_title": "iOS Developer",
+		"company_name": "Brain Station 23",
+		"site": "Onsite",
+		"time": "Part Time",
+		"location": "Bir Uttam Ak Khandaker Rd, Mohakhali(Amtoli) C/A, Dhaka, Bangladesh",
+		"salary": "60k - 70k",
+		"description": "We are looking for some iOS developer responsible for the development, maintenance, and deployment of iOS applications. Your primary focus will be developing high-end iOS applications for iOS devices by following following proper architecture patterns, clean code and publish applications on App Store. Therefore, a commitment to collaborative problem solving, sophisticated design, and creating quality products is essential.",
+		"responsibility": "Design and build advanced native applications for the iOS platform. Advanced Applications include triggering Device API's such as TouchID, Address Book, GPS and more. Participate in end to end product life cycle: confirming requirements, solution design, development, unit testing, and implementation. Work with team members to design solutions that are supported by the architecture of the existing systems.",
+		"educational_requirements": "B. Sc./ M. Sc. in Computer Science or Software Engineering from any reputed university/Equivalent combination of education and experience may be considered.",
+		"experiences": "Experience working with iOS frameworks such as Core Data, Core Animation, Core Graphics and Core Text. Experienced with Reactive Cocoa, MVVM and other architecture patterns. Experienced with API design and integration. Cognizant of HTTP/REST principles, networking, performance, latency, caching, authentication, security, and encryption",
+		"contact_information": {
+			"phone": "01783-090909",
+			"email": "info@brainstation23.com"
+		}
+	},
+	{
+		"id": 6,
+		"logo_url": "https://i.ibb.co/86h0Zr8/google.png",
+		"job_title": "Operations Manager, Marketing Technology and Operations",
+		"company_name": "Google LLC",
+		"site": "Onsite",
+		"time": "Part Time",
+		"location": "San Francisco, CA, USA",
+		"salary": "180k -200k",
+		"description": "In this role, you will enable and guide marketers to deliver meaningful customer interactions by improving messaging infrastructure, intelligence and operations to help advertisers succeed with Google Ads. ACO sits within the broader Ads Marketing and Center of Excellence (ACE) team. This role will be responsible for liaising with various marketing teams to build and the strategic development of large scaled marketing campaigns and advocacy programs critical for the success of our Small and Medium Business (SMB) advertisers and users. ",
+		"responsibility": "Lead the strategic development of key programs for SMB advertisers and users. Own scaled campaign planning, execution and measurement with cross-functional teams. Work with marketing and analytics teams to establish best practices for campaign execution and optimize existing processes.",
+		"educational_requirements": "Bachelor's degree or equivalent practical experience.",
+		"Experiences": "6 years of experience in strategy and operations, consulting, or campaign operations.",
+		"contact_information": {
+			"phone": "8701755000",
+			"email": "info@gmail.com"
+		}
+	}
+]

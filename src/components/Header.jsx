@@ -84,33 +84,33 @@ const Header = () => {
 									<NavLink
 										to='/'
 										className={`${({ isActive }) =>
-											isActive && 'active'} mr-5 xl:mr-8 hv text-gray`}
+											isActive && 'active'} mt-5  text-gray`}
 									>
 										Home
 									</NavLink>
 									<NavLink
-										to='/'
+										to='/appliedJobs'
 										className={`${({ isActive }) =>
-											isActive && 'active'} mr-5 xl:mr-8 hv text-gray`}
+											isActive && 'active'} mt-5  text-gray`}
 									>
 										Applied Jobs
 									</NavLink>
 									<NavLink
-										to='/'
+										to='/statistics'
 										className={`${({ isActive }) =>
-											isActive && 'active'} mr-5 xl:mr-8 hv text-gray`}
+											isActive && 'active'} mt-5  text-gray`}
 									>
 										Statistics
 									</NavLink>
 									<NavLink
-										to='/'
+										to='/blog'
 										className={`${({ isActive }) =>
-											isActive && 'active'} mr-5 xl:mr-8 hv text-gray`}
+											isActive && 'active'} mt-5 text-gray`}
 									>
 										Blog
 									</NavLink>
 								</nav>
-								<div className='flex justify-center'>
+								<div className='text-center'>
 									<button className='btn-secondary mt-4'>Start Applying</button>
 								</div>
 							</div>

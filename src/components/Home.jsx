@@ -1,16 +1,19 @@
 import Lottie from 'lottie-react';
-import React from 'react';
+import React, { useState } from 'react';
 import { useLoaderData } from 'react-router-dom';
 import banner from '../../src/assets/banner.json';
 import Category from './Category';
+import Job from './Job';
 
 const Home = () => {
-	const categories = useLoaderData();
-	console.log(categories);
+	const [isShowMore, setIsShowMore] = useState(false);
+
+	const [categories, jobs] = useLoaderData();
+	// console.log(categories);
 	return (
 		<>
 			<div className='bg-[#faf8ff]'>
-				<div className='my-container md:py-10'>
+				<div className='my-container py-4 md:py-10'>
 					<div className='flex flex-col-reverse md:flex-row justify-between items-center'>
 						<div className='mt-8 md:mt-0'>
 							<div className='font-extrabold text-4xl xl:text-6xl 2xl:text-7xl'>
@@ -32,8 +35,8 @@ const Home = () => {
 				</div>
 			</div>
 			<div className='my-container'>
-				<div className='my-16'>
-					<h1 className='text-5xl font-extrabold text-center mb-4'>
+				<div className='my-24'>
+					<h1 className='text-3xl md:text-5xl font-extrabold text-center mb-4'>
 						Job Category List
 					</h1>
 					<p className='font-medium text-center text-gray'>
@@ -45,6 +48,30 @@ const Home = () => {
 							<Category key={category.id} category={category} />
 						))}
 					</div>
+				</div>
+				<div className='my-24'>
+					<h1 className='text-3xl md:text-5xl font-extrabold text-center mb-4'>
+						Featured Jobs
+					</h1>
+					<p className='font-medium text-center text-gray'>
+						Explore thousands of job opportunities with all the information you
+						need. Its your future.
+					</p>
+					<div className='grid grid-cols-1 lg:grid-cols-2 gap-10 my-10'>
+						{jobs.slice(0, isShowMore ? jobs.length : 4).map(job => (
+							<Job key={job.id} job={job} />
+						))}
+					</div>
+					{!isShowMore && (
+						<div className='text-center'>
+							<button
+								onClick={() => setIsShowMore(true)}
+								className='btn-primary'
+							>
+								See All Jobs
+							</button>
+						</div>
+					)}
 				</div>
 			</div>
 		</>
