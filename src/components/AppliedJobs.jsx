@@ -1,9 +1,10 @@
 import React from 'react';
+import Banner from './Banner';
 
 const AppliedJobs = () => {
 	return (
 		<div>
-			<h1>Applied Jobs</h1>
+			<Banner>Applied Jobs</Banner>
 		</div>
 	);
 };

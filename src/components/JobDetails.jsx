@@ -7,7 +7,7 @@ import {
 } from '@heroicons/react/24/outline';
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
-import Banner from '../assets/Banner';
+import Banner from './Banner';
 
 const JobDetails = () => {
 	const {
