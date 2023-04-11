@@ -7,6 +7,7 @@ import Blog from './components/Blog';
 import Home from './components/Home';
 import Statistics from './components/Statistics';
 import './index.css';
+import { getDataFromJson } from './utils/getDataFromJson';
 
 const router = createBrowserRouter([
 	{
@@ -16,6 +17,7 @@ const router = createBrowserRouter([
 			{
 				path: '/',
 				element: <Home />,
+				loader: getDataFromJson,
 			},
 			{
 				path: '/appliedJobs',
