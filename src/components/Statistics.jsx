@@ -67,6 +67,7 @@ const Statistics = () => {
 					/>
 				</RadarChart>
 			</div>
+			<p className='mb-10 text-center'>Figure: SimpleRadarChart</p>
 		</>
 	);
 };
