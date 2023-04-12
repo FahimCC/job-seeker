@@ -5,13 +5,20 @@ import {
 	MapPinIcon,
 	PhoneIcon,
 } from '@heroicons/react/24/outline';
-import React from 'react';
+import React, { useContext } from 'react';
 import toast from 'react-hot-toast';
-import { useLoaderData } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
+import { JobContext } from '../App';
 import { addToDb } from '../utils/fakedb';
 import Banner from './Banner';
 
 const JobDetails = () => {
+	// * get dynamic route id
+	const paramsId = useParams();
+
+	const jobs = useContext(JobContext);
+	const job = jobs.find(job => job.id === parseInt(paramsId.id));
+
 	const {
 		id,
 		salary,
@@ -22,7 +29,8 @@ const JobDetails = () => {
 		responsibility,
 		educational_requirements,
 		experiences,
-	} = useLoaderData();
+	} = job;
+	// console.log(jobs, contact_information);
 
 	const handleAddToDb = id => {
 		const applied = addToDb(id);

@@ -9,23 +9,24 @@ import Home from './components/Home';
 import JobDetails from './components/JobDetails';
 import Statistics from './components/Statistics';
 import './index.css';
-import { getDataFromJson, getSingleDataFromJson } from './utils/DataFromJson';
+import { getDataFromJson } from './utils/DataFromJson';
 
 const router = createBrowserRouter([
 	{
 		path: '/',
 		element: <App />,
-		errorElement: <ErrorPage/>,
+		errorElement: <ErrorPage />,
+		loader: getDataFromJson,
 		children: [
 			{
 				path: '/',
 				element: <Home />,
-				loader: getDataFromJson,
+				// loader: getDataFromJson,
 			},
 			{
 				path: '/jobDetails/:id',
 				element: <JobDetails />,
-				loader: ({ params }) => getSingleDataFromJson(params.id),
+				// loader: ({ params }) => getSingleDataFromJson(params.id),
 			},
 			{
 				path: '/appliedJobs',

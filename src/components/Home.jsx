@@ -1,15 +1,20 @@
 import Lottie from 'lottie-react';
-import React, { useState } from 'react';
-import { useLoaderData } from 'react-router-dom';
+import React, { useContext, useState } from 'react';
 import banner from '../../src/assets/banner.json';
+import { CategoryContext, JobContext } from '../App';
 import Category from './Category';
 import Job from './Job';
 
 const Home = () => {
 	const [isShowMore, setIsShowMore] = useState(false);
 
-	const [categories, jobs] = useLoaderData();
-	// console.log(categories);
+	// * get data using context API
+	const categories = useContext(CategoryContext);
+	const jobs = useContext(JobContext);
+
+	// * get data using loader
+	// const { categories, jobs } = useLoaderData();
+	// console.log(categories, jobs);
 	return (
 		<>
 			<div className='bg-[#faf8ff]'>

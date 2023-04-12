@@ -1,4 +1,4 @@
-// *use local storage to merge data
+// *use local storage to add data
 const addToDb = id => {
 	let appliedJob;
 
@@ -7,7 +7,7 @@ const addToDb = id => {
 
 	const quantity = appliedJob[id];
 	if (quantity) {
-		localStorage.setItem('applied-job', JSON.stringify(appliedJob));
+		// localStorage.setItem('applied-job', JSON.stringify(appliedJob));
 		return false;
 	} else {
 		appliedJob[id] = 1;
@@ -15,4 +15,10 @@ const addToDb = id => {
 		return true;
 	}
 };
-export { addToDb };
+// *use local storage to get data
+const getDataFromDb = id => {
+	const storedCart = localStorage.getItem('applied-job');
+
+	return storedCart ? JSON.parse(storedCart) : {};
+};
+export { addToDb, getDataFromDb };
