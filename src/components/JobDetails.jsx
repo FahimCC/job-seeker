@@ -6,11 +6,14 @@ import {
 	PhoneIcon,
 } from '@heroicons/react/24/outline';
 import React from 'react';
+import toast from 'react-hot-toast';
 import { useLoaderData } from 'react-router-dom';
+import { addToDb } from '../utils/fakedb';
 import Banner from './Banner';
 
 const JobDetails = () => {
 	const {
+		id,
 		salary,
 		job_title,
 		contact_information,
@@ -20,6 +23,14 @@ const JobDetails = () => {
 		educational_requirements,
 		experiences,
 	} = useLoaderData();
+
+	const handleAddToDb = id => {
+		const applied = addToDb(id);
+		applied
+			? toast.success('Applied Successfully')
+			: toast.error('Already Applied');
+	};
+
 	return (
 		<>
 			<Banner>Job Details</Banner>
@@ -66,7 +77,12 @@ const JobDetails = () => {
 							Address :<span className='font-medium'> {location}</span>
 						</p>
 					</div>
-					<button className='btn-primary w-full mt-6'>Apply Now</button>
+					<button
+						onClick={() => handleAddToDb(id)}
+						className='btn-primary w-full mt-6'
+					>
+						Apply Now
+					</button>
 				</div>
 			</div>
 		</>
