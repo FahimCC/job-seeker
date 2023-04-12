@@ -1,4 +1,4 @@
-# JobSeeker
+# **JobSeeker**
 
 #### This React app is made for job hunters. The most common features of this app is -
 

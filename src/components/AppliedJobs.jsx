@@ -41,7 +41,7 @@ const AppliedJobs = () => {
 			<Banner>Applied Jobs</Banner>
 			<div className='my-container my-24'>
 				<div className='flex justify-end gap-5 my-8'>
-					<button onClick={handleOnsiteJob} className='btn-secondary '>
+					<button onClick={handleOnsiteJob} className='btn-secondary'>
 						Onsite
 					</button>
 					<button onClick={handleRemoteJob} className='btn-secondary'>
