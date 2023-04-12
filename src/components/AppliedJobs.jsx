@@ -8,6 +8,7 @@ const AppliedJobs = () => {
 	const jobs = useContext(JobContext);
 
 	const [appliedJobData, setAppliedJobData] = useState([]);
+	const [duplicateAppliedJobData, setDuplicateAppliedJobData] = useState([]);
 
 	useEffect(() => {
 		const appliedJobId = getDataFromDb();
@@ -21,8 +22,18 @@ const AppliedJobs = () => {
 			}
 		}
 		setAppliedJobData(newArr);
+		setDuplicateAppliedJobData(newArr);
 	}, []);
 
+	const handleOnsiteJob = () => {
+		const job = appliedJobData.filter(jobData => jobData.site === 'Onsite');
+		setDuplicateAppliedJobData(job);
+	};
+
+	const handleRemoteJob = () => {
+		const job = appliedJobData.filter(jobData => jobData.site === 'Remote');
+		setDuplicateAppliedJobData(job);
+	};
 	// console.log(appliedJobData);
 
 	return (
@@ -30,11 +41,15 @@ const AppliedJobs = () => {
 			<Banner>Applied Jobs</Banner>
 			<div className='my-container my-24'>
 				<div className='flex justify-end gap-5 my-8'>
-					<button className='btn-secondary'>Onsite</button>
-					<button className='btn-secondary'>Remote</button>
+					<button onClick={handleOnsiteJob} className='btn-secondary'>
+						Onsite
+					</button>
+					<button onClick={handleRemoteJob} className='btn-secondary'>
+						Remote
+					</button>
 				</div>
 				<div>
-					{appliedJobData.map(appliedSingleJobInfo => (
+					{duplicateAppliedJobData.map(appliedSingleJobInfo => (
 						<AppliedSingleJobInfo
 							key={appliedSingleJobInfo.id}
 							appliedSingleJobInfo={appliedSingleJobInfo}
