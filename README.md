@@ -9,4 +9,4 @@
 - We have a blog page that shows the important Q&A.
 - We have also a statistics page that shows a SimpleRadarChart.
 
-## Live site link [JobSeeker]()
+## Live site link [JobSeeker](https://regal-crisp-f70e3b.netlify.app/)

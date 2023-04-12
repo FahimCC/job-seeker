@@ -40,7 +40,8 @@ const AppliedJobs = () => {
 		<div>
 			<Banner>Applied Jobs</Banner>
 			<div className='my-container my-24'>
-				<div className='flex justify-end gap-5 my-8'>
+				<div className='flex justify-end items-center h-10 gap-5 my-8'>
+					<p className='btn-outline'>Filter By...</p>
 					<button onClick={handleOnsiteJob} className='btn-secondary'>
 						Onsite
 					</button>
@@ -49,12 +50,21 @@ const AppliedJobs = () => {
 					</button>
 				</div>
 				<div>
-					{duplicateAppliedJobData.map(appliedSingleJobInfo => (
-						<AppliedSingleJobInfo
-							key={appliedSingleJobInfo.id}
-							appliedSingleJobInfo={appliedSingleJobInfo}
-						></AppliedSingleJobInfo>
-					))}
+					{duplicateAppliedJobData.length === 0 ? (
+						<div>
+							<p className='text-center text-xl mt-20'>
+								You have not applied for any job. Apply first...
+							</p>
+							{/* {toast.error('Apply first...')} */}
+						</div>
+					) : (
+						duplicateAppliedJobData.map(appliedSingleJobInfo => (
+							<AppliedSingleJobInfo
+								key={appliedSingleJobInfo.id}
+								appliedSingleJobInfo={appliedSingleJobInfo}
+							></AppliedSingleJobInfo>
+						))
+					)}
 				</div>
 			</div>
 		</div>
