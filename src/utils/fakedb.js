@@ -16,7 +16,7 @@ const addToDb = id => {
 	}
 };
 // *use local storage to get data
-const getDataFromDb = id => {
+const getDataFromDb = () => {
 	const storedCart = localStorage.getItem('applied-job');
 
 	return storedCart ? JSON.parse(storedCart) : {};
